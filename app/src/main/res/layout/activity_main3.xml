@@ -5,42 +5,58 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    <TextView
-        android:text="Dessert  :"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <ToggleButton
+
+    <CheckBox
+        android:id="@+id/checkBox1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="add"
+        android:layout_centerInParent="true"
+        android:text="have sale" />
+
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sale is active to.." />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dessert  :" />
+
+    <ToggleButton
         android:id="@+id/toggleButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/toggleButton"
         android:checked="true"
-        android:layout_alignTop="@+id/toggleButton" />
+        android:text="add" />
+
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_below="@+id/imageButton"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2">
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2">
 
         <RadioButton
-            android:layout_width="106dp"
-            android:layout_height="wrap_content"
-            android:text="1 portion"
             android:id="@+id/radioButton"
-            android:textSize="10dp"
-            android:textColor="@android:color/holo_red_light"
-            android:checked="false"
-            android:layout_gravity="center_horizontal" />
-
-        <RadioButton
             android:layout_width="106dp"
             android:layout_height="wrap_content"
-            android:text="2 portions"
-            android:id="@+id/radioButton2"
             android:layout_gravity="center_horizontal"
             android:checked="false"
+            android:text="1 portion"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="10dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:text="2 portions"
             android:textColor="@android:color/holo_red_dark"
             android:textSize="10dp" />
 
@@ -56,11 +72,13 @@
 
 
     </RadioGroup>
+
     <Button
         android:id="@+id/buttonDesktop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginLeft="8dp"
-        android:text="Desktop"/>
+        android:layout_marginTop="8dp"
+        android:text="Desktop" />
+
 </LinearLayout>
