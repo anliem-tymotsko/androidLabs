@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name" translatable="false">GumenukA</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="the_prevention_of_crime_and_disorder_public_safety_the_prevention_of_public_nuisance_and_the_protection_of_children_from_harm_conditions_can_be_suggested_by_premises_owners_or_sought_by_interested_parties_such_as_residents_and_required_by_responsible_authorities_such_as_the_police_conditions_must_be_applied_on_a_case_by_case_basis">the prevention of crime and disorder public safety the prevention of public nuisance; and the protection of children from harm. Conditions can be suggested by premises owners, or sought by interested parties such as residents and required by responsible authorities such as the police. Conditions must be applied on a case-by-case basis.</string>
 </resources>

@@ -58,11 +58,11 @@
         android:layout_width="match_parent"
 
         />
-    <ToggleButton
+   <!-- <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="toggle"
         android:id="@+id/toggleButton2"
         android:checked="true"
-        android:layout_alignTop="@+id/toggleButton" />
+        android:layout_alignTop="@+id/toggleButton" />-->
 </RelativeLayout>

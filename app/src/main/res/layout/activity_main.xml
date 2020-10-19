@@ -1,67 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:columnCount="3"
-    android:orientation="horizontal" >
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/myNavHostFragment"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/navigation" />
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/main" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>
+
+    <!--  <TextView
+          android:text="Kitchen show :"/>
+      <ToggleButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="by card"
+          android:id="@+id/toggleButton2"
+          android:checked="true"
+          android:layout_alignTop="@+id/toggleButton" />
+      <TextView />
+      <Button android:text="Set date"
+          android:id="@+id/btn_date"/>
+      <TextView />
+      <TextView />
+      <Button android:text="Set time"
+          android:id="@+id/btn_time"/>
+      <TextView />
+      <TextView />
+      <TextView />
+      <TextView />
+      <TextView />
+      <RadioGroup
+          android:id="@+id/radioGroup"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:layout_below="@+id/imageButton"
+          android:layout_alignLeft="@+id/textView2"
+          android:layout_alignStart="@+id/textView2">
+
+          <RadioButton
+              android:layout_width="106dp"
+              android:layout_height="wrap_content"
+              android:text="Book Table"
+              android:id="@+id/radioButton"
+              android:textSize="10dp"
+              android:textColor="@android:color/holo_red_light"
+              android:checked="false"
+              android:layout_gravity="center_horizontal" />
+
+          <RadioButton
+              android:layout_width="106dp"
+              android:layout_height="wrap_content"
+              android:text="Bool hall"
+              android:id="@+id/radioButton2"
+              android:layout_gravity="center_horizontal"
+              android:checked="false"
+              android:textColor="@android:color/holo_red_dark"
+              android:textSize="10dp" />
 
 
-    <TextView
-        android:text="Kitchen show :"/>
-    <ToggleButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="by card"
-        android:id="@+id/toggleButton2"
-        android:checked="true"
-        android:layout_alignTop="@+id/toggleButton" />
-    <TextView />
-    <Button android:text="Set date"
-        android:id="@+id/btn_date"/>
-    <TextView />
-    <TextView />
-    <Button android:text="Set time"
-        android:id="@+id/btn_time"/>
-    <TextView />
-    <TextView />
-    <TextView />
-    <TextView />
-    <TextView />
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/imageButton"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2">
+      </RadioGroup>
+      <TextView />
+      <Button android:text="next ->"
+          android:id="@+id/btn_activity2"/>
+      <TextView />-->
 
-        <RadioButton
-            android:layout_width="106dp"
-            android:layout_height="wrap_content"
-            android:text="Book Table"
-            android:id="@+id/radioButton"
-            android:textSize="10dp"
-            android:textColor="@android:color/holo_red_light"
-            android:checked="false"
-            android:layout_gravity="center_horizontal" />
-
-        <RadioButton
-            android:layout_width="106dp"
-            android:layout_height="wrap_content"
-            android:text="Bool hall"
-            android:id="@+id/radioButton2"
-            android:layout_gravity="center_horizontal"
-            android:checked="false"
-            android:textColor="@android:color/holo_red_dark"
-            android:textSize="10dp" />
-
-
-    </RadioGroup>
-    <TextView />
-    <Button android:text="next ->"
-        android:id="@+id/btn_activity2"/>
-    <TextView />
-
-</GridLayout>
 

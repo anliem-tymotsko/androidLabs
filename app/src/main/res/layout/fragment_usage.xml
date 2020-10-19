@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.navigation.AboutFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/aboutConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/multiAutoCompleteTextView"
+            android:layout_width="201dp"
+            android:layout_height="233dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginLeft="107dp"
+            android:layout_marginTop="204dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginRight="97dp"
+            android:layout_marginBottom="443dp"
+            android:text="@string/the_prevention_of_crime_and_disorder_public_safety_the_prevention_of_public_nuisance_and_the_protection_of_children_from_harm_conditions_can_be_suggested_by_premises_owners_or_sought_by_interested_parties_such_as_residents_and_required_by_responsible_authorities_such_as_the_police_conditions_must_be_applied_on_a_case_by_case_basis"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.577"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.315" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
