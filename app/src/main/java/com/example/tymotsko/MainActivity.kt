@@ -1,5 +1,4 @@
 package com.example.tymotsko
-import com.example.tymotsko.databinding.ActivityMainBinding
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +9,8 @@ import androidx.navigation.NavDestination
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
+import com.example.tymotsko.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.fragment_1.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -17,7 +18,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration : AppBarConfiguration
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
         drawerLayout = binding.drawerLayout
         val navController = this.findNavController(R.id.myNavHostFragment)
@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         NavigationUI.setupWithNavController(binding.navView, navController)
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
